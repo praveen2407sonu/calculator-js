@@ -67,19 +67,20 @@ button:hover {
         <option value="/"> /</option>
         <option value="%">%</option>
     </select><br><br>
-    <button type="button" onclick="performCalculation()">Submitt</button>
-    <!-- <input type="text" id="result" placeholder="find result"> -->
+    <!-- <button type="button" onclick="performCalculation()">Submitt</button> -->
+     <button id="calc" type="button">Submitt</button>
+    <input id="resultdata" type="text">
 </form>
-<div id="result"></div> 
+<!-- <div id="result"></div>  -->
 </div>
 
 <script>
 
 
 
- function performCalculation() {
-// let calculator = document.getElementById('calculator')
-//    calculator= addEventListener('click',()=>{
+//  function performCalculation() {
+ let calculator = document.getElementById('calc')
+   calculator= addEventListener('click',()=>{
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
     const operation = document.getElementById('operation').value;
@@ -106,8 +107,12 @@ button:hover {
             result = 'Invalid operation';
     }
 
-    document.getElementById('result').innerText = 'Result: ' + result.toFixed(3);
-}
+   
+    // document.getElementById('resultdata').innerText = 'Result: ' + result.toFixed(3);
+
+    document.getElementById('resultdata').value=result.toFixed(3);
+})
+
 </script>
 </body>
 </html>
