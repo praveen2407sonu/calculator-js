@@ -4,28 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
-
-    <style>
-   .main{
-
-    text-align: center;
-    margin-top: 10rem;
-    height: 300px;
-    width: 30%;
-    margin-left: 25rem;
-    background-color: aqua;
-   }
-   input{
-    margin-top: 20px;
-    padding: 10px;
-   }
-   button{
-    padding: 8px 15px;
-    border-radius: 10px;
+<style>
+body {
     
-   }
-   
-    </style>
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    text-align: center;
+    margin-top: 100px; 
+    height: auto;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00bcd4;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input, select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+</style>
 
 </head>
 <body>
